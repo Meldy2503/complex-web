@@ -15,4 +15,5 @@ body {
     background: linear-gradient(to right, hsla(111, 55%, 64%, 0.781), hsla(160, 61%, 57%, 0.781)), url(./img/hero.jpg);
     background-position: top;
     background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
