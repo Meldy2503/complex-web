@@ -9,10 +9,11 @@ body {
     font-weight: 400;
     line-height: 2;
     color: #777;
+    padding: 20px;
 }
 .header {
     height: 100vh;
-    background: linear-gradient(to right, hsla(111, 55%, 64%, 0.781), hsla(160, 61%, 57%, 0.781)), url(./img/hero.jpg);
+    background: linear-gradient(to right bottom, hsla(111, 55%, 64%, 0.8), hsla(160, 61%, 57%, 0.8)), url(./img/hero.jpg);
     background-position: top;
     background-size: cover;
     position: relative;
@@ -24,5 +25,26 @@ body {
     left: 40px;
 }
 .logo {
-    height: 50px;
+    height: 35px;
+}
+.sub-header {
+    position: absolute;
+    top: 30%;
+    left: 52%;
+    text-transform: uppercase;
+    transform: translate(-50%, -50%);
+
+}
+.sub1 {
+    font-size: 70px;
+    font-weight: 100;
+    letter-spacing: 25px;
+    color: #fff;
+}
+.sub2 {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 16px;
+    line-height: 0.1;
+    color: #fff;
 }
