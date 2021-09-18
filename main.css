@@ -12,7 +12,7 @@ body {
 }
 .header {
     height: 100vh;
-    background: url(./img/hero.jpg);
+    background: linear-gradient(to right, hsla(111, 55%, 64%, 0.781), hsla(160, 61%, 57%, 0.781)), url(./img/hero.jpg);
     background-position: top;
     background-size: cover;
 }
