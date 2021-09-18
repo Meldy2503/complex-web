@@ -40,6 +40,7 @@ body {
     font-weight: 100;
     letter-spacing: 25px;
     color: #fff;
+    animation: moveleft 1s ease-out;
 }
 .sub2 {
     font-size: 20px;
@@ -47,4 +48,31 @@ body {
     letter-spacing: 16px;
     line-height: 0.1;
     color: #fff;
+    animation: moveright 1s ease-out;
+}
+@keyframes moveleft {
+    0% {
+        opacity: 0;
+        transform: translateX(-150px);
+    }
+   80% {
+        transform: translateX(10px);
+   }
+   100% {
+       opacity: 1;
+       transform: translateX(0);
+   }
+}
+@keyframes moveright {
+    0% {
+        opacity: 0;
+        transform: translateX(150px);
+    }
+   80% {
+        transform: translateX(-10px);
+   }
+   100% {
+       opacity: 1;
+       transform: translateX(0);
+   }
 }
