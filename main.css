@@ -19,15 +19,15 @@ body {
     position: relative;
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
-.logo-frame {
+.header__logo-frame {
     position: absolute;
     top: 40px;
     left: 40px;
 }
-.logo {
+.header__logo {
     height: 35px;
 }
-.sub-header {
+.header-text {
     position: absolute;
     top: 40%;
     left: 50%;
@@ -36,14 +36,15 @@ body {
     text-align: center;
 
 }
-.sub1 {
+.header-text--sub1 {
     font-size: 70px;
     font-weight: 100;
     letter-spacing: 25px;
     color: #fff;
     animation: moveleft 1s ease-out;
+    display: block;
 }
-.sub2 {
+.header-text--sub2 {
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 16px;
@@ -51,6 +52,7 @@ body {
     color: #fff;
     animation: moveright 1s ease-out;
     margin-bottom: 80px;
+    display: block;
 }
 @keyframes moveleft {
     0% {
@@ -96,7 +98,7 @@ body {
    transform: translateY(-1px); 
    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
-.btn-white {
+.btn--white {
     background-color: #fff;
     color: rgba(119, 119, 119, 0.7);
 }
@@ -116,10 +118,10 @@ body {
     transform: scale(1.6);
     opacity: 0;
 }
-.btn-white::after {
+.btn--white::after {
    background-color: #fff;
 }
-.btn-animated {
+.btn--animated {
     animation: moveInButton .5s ease-in .8s;
     animation-fill-mode: backwards;   
 }
