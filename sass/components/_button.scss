@@ -2,8 +2,8 @@
     &:link,
     &:visited {
        text-decoration: none;
-       padding: 15px 40px;
-       border-radius: 100px;
+       padding: 1.5rem 4rem;
+       border-radius: 10rem;
        font-weight: 700;
        display: inline-block;  
        transition: all 0.3s;
@@ -11,7 +11,7 @@
     }
      &:hover {
            transform: translateY(-3px);
-           box-shadow: 5px 10px 20px rgba($color-black, 0.5);
+           box-shadow: .5rem 1rem 2rem rgba($color-black, 0.5);
          &::after {
                transform: scale(1.6);
                opacity: 0;
@@ -19,7 +19,7 @@
        }
      &:active {
           transform: translateY(-1px); 
-          box-shadow: 0px 5px 10px rgba($color-black, 0.2);
+          box-shadow: 0 .5rem 1rem rgba($color-black, 0.2);
    }
     &--white {
        background-color: $color-white;
@@ -33,7 +33,7 @@
        display: inline-block;
        height: 100%;
        width: 100%;
-       border-radius: 100px;
+       border-radius: 10rem;
        position: absolute;
        top: 0;
        left: 0;
@@ -45,3 +45,28 @@
        animation-fill-mode: backwards;   
      }
    }
+
+   .btn-text-1 {
+    &:link,
+    &:visited {
+        font-size: 1.6rem;
+        color: $color-primary-dark;
+        text-decoration: none;
+        display: inline-block;
+        border-bottom: 1px solid $color-primary-dark;
+        padding: 3px;
+        transition: all .3s;
+    }
+    
+   &:hover {
+    color: $color-white;
+    background-color: $color-primary-dark;
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+    transform: translateY(-2px);
+   }
+
+   &:active { 
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+    transform: translateY(-2px);
+   }
+}   
