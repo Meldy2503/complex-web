@@ -54,6 +54,33 @@ body {
     }
 }
 
+.heading-two {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.paragraph {
+    font-size: 1.6rem;
+    font-weight: 300;
+
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
