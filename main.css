@@ -39,6 +39,9 @@ body {
     opacity: 1;
     transform: translateY(0px); } }
 
+.u-center-text {
+  text-align: center; }
+
 body {
   font-family: 'Lato', sans-serif;
   font-size: 1.8rem;
@@ -80,7 +83,11 @@ body {
   letter-spacing: 0.15rem;
   background: linear-gradient(to right, #7ed56f, #28b485);
   -webkit-background-clip: text;
-  color: transparent; }
+  color: transparent;
+  transition: all .5s; }
+  .heading-one:hover {
+    transform: skewX(10deg) skewY(5deg) scale(1.1);
+    text-shadow: 0.2rem 1rem 3rem rgba(0, 0, 0, 0.2); }
 
 .btn:link, .btn:visited {
   text-decoration: none;
@@ -124,7 +131,7 @@ body {
   animation: moveInButton .5s ease-in .8s;
   animation-fill-mode: backwards; }
 
-/* .row {
+.row {
   max-width: 114rem;
   background-color: #eee;
   margin: 0 auto; }
@@ -150,7 +157,7 @@ body {
   .row .col-2-of-4 {
     width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem); }
   .row .col-3-of-4 {
-    width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); } */
+    width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
 
 .header {
   height: 100vh;
