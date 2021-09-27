@@ -175,7 +175,8 @@ body {
     position: absolute;
     box-radius: 2px;
     z-index: 10;
-    transition: all .3s; }
+    transition: all .3s;
+    outline-offset: 2rem; }
     .composition__photo--p1 {
       left: 0;
       top: 3rem; }
@@ -188,7 +189,8 @@ body {
     .composition__photo:hover {
       transform: scale(1.1) rotateX(20deg) translateY(-2rem);
       box-shadow: 0 3rem 4rem rgba(0, 0, 0, 0.5);
-      z-index: 20; }
+      z-index: 20;
+      outline: 1.2rem solid #28b485; }
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.9); }
 

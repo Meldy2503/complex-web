@@ -8,6 +8,7 @@
         box-radius: 2px;
         z-index: 10;
         transition: all .3s;
+        outline-offset: 2rem;
       
       &--p1 {
           left: 0;
@@ -27,6 +28,7 @@
         transform: scale(1.1) rotateX(20deg) translateY(-2rem);
         box-shadow: 0 3rem 4rem rgba($color-black, .5);
         z-index: 20;
+        outline: 1.2rem solid $color-primary-dark;
     }
   }
      &:hover &__photo:not(:hover) {
