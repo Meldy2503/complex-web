@@ -7,6 +7,7 @@
         position: absolute;
         box-radius: 2px;
         z-index: 10;
+        transition: all .3s;
       
       &--p1 {
           left: 0;
@@ -22,8 +23,19 @@
         left: 20%;
         top: 15rem;
     }
+    &:hover {
+        transform: scale(1.1) rotateX(20deg) translateY(-2rem);
+        box-shadow: 0 3rem 4rem rgba($color-black, .5);
+        z-index: 20;
+    }
   }
-}     
+     &:hover &__photo:not(:hover) {
+         transform: scale(.9);
+     }
+     //composition:hover composition__photo:not(:hover) {}, this makes the other pictures become a bit smaller when you hover on one
+}
+
+  
 
 
 
