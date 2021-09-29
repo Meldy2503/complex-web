@@ -8,6 +8,7 @@
        display: inline-block;  
        transition: all 0.3s;
        position: relative;
+       text-transform: uppercase;
     }
      &:hover {
            transform: translateY(-3px);
@@ -25,9 +26,10 @@
        background-color: $color-white;
        color: rgba($color-grey-dark, 0.7);
            &::after {
-                 background-color: $color-white;
-        }
-   }
+                 background-color: $color-whit
+      }
+    }
+
    &::after {
        content: "";
        display: inline-block;
