@@ -99,8 +99,38 @@
             }
          }
 
-    }  
+    }
+
+    &__back-text {
+           position: absolute;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%, -50%);
+           width: 95%;
+           text-align: center;
+    }       
+
+       &__back-text-values {
+           color: $color-white;
+           text-align: center;
+        } 
+
+        &__back-text-only {
+                font-size: 1.5rem;
+                text-transform: uppercase;
+                margin-bottom: -9rem;
+            
+        }
+           
+        &__back-text-number {
+                font-size: 6rem;
+                font-weight: 100;
+                font-family: 'Times New Roman', Times, serif;
+        
+        }
 }
+
+
 
 
 
