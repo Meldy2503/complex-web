@@ -4,10 +4,10 @@
     perspective: 150rem;
     -moz-perspective: 150rem;
     position: relative;
-    height: 50rem;
+    height: 51rem;
     
     &__side {
-        height: 50rem;
+        height: 51rem;
         width: 100%;
         transition: all .8s ease;
         position: absolute;
@@ -44,7 +44,7 @@
 //front of card
     &__images {
     background-size: cover;
-    height: 25rem;
+    height: 22rem;
     background-blend-mode: screen;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
@@ -59,10 +59,10 @@
         text-transform: uppercase;
         font-weight: 100;
         position: absolute;
-        top: 10rem;
+        top: 9rem;
         right: 1.5rem;
         text-align: right;
-        line-height: 1.8;
+        line-height: 1.7;
         width: 75%;
     }
 
@@ -76,8 +76,33 @@
                 rgba($color-secondary-light, .8), 
                 rgba($color-secondary-dark, .8));
         }
-    }    
+    } 
+    &__text {
+        margin-top: 2rem;
+        color: $color-grey-dark;
+
+         &-list {
+            
+               list-style: none;
+               width: 75%;
+               margin-top: 0 auto;
+
+            li {
+                font-size: 1.5rem;
+                text-align: center;
+                padding: .8rem;
+
+                &:not(:last-child) {
+                    border-bottom: 2px solid $color-grey-light-1;
+                }
+    
+            }
+         }
+
+    }  
 }
+
+
 
 
 
