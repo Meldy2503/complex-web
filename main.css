@@ -14,9 +14,9 @@ body {
 @keyframes moveleft {
   0% {
     opacity: 0;
-    transform: translateX(-150px); }
+    transform: translateX(-15rem); }
   80% {
-    transform: translateX(10px); }
+    transform: translateX(1rem); }
   100% {
     opacity: 1;
     transform: translateX(0); } }
@@ -24,9 +24,9 @@ body {
 @keyframes moveright {
   0% {
     opacity: 0;
-    transform: translateX(150px); }
+    transform: translateX(15rem); }
   80% {
-    transform: translateX(-10px); }
+    transform: translateX(-1rem); }
   100% {
     opacity: 1;
     transform: translateX(0); } }
@@ -34,10 +34,10 @@ body {
 @keyframes moveInButton {
   0% {
     opacity: 0;
-    transform: translateY(50px); }
+    transform: translateY(5rem); }
   100% {
     opacity: 1;
-    transform: translateY(0px); } }
+    transform: translateY(0); } }
 
 .u-center-text {
   text-align: center; }
@@ -181,7 +181,8 @@ body {
     top: 0;
     left: 0;
     backface-visibility: hidden;
-    border-radius: 3px;
+    border-radius: .5rem;
+    overflow: hidden;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
     .card__side--front {
       background-color: #fff; }
@@ -190,9 +191,16 @@ body {
       .card__side--back-1 {
         background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
   .card:hover .card__side--front {
-    transform: rotateY(180deg); }
+    transform: rotateY(-180deg); }
   .card:hover .card__side--back {
     transform: rotateY(0); }
+  .card__images {
+    background-size: cover;
+    height: 25rem;
+    background-blend-mode: screen;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
+    .card__images--1 {
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(./img/nat-5.jpg); }
 
 .composition {
   position: relative; }
