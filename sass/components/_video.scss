@@ -1,0 +1,20 @@
+.story {
+    width: 75%;
+    background-color: $color-white;
+    height: 18rem;
+    margin: 0 auto;
+    box-shadow: 1rem 2rem 3rem rgba($color-black, .2);
+    border-radius: 3px;
+    padding: 5rem;
+    -webkit-clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+
+
+&__image-shape {}
+&__text {
+    padding: 0 5rem;
+}
+
+}
+
+
