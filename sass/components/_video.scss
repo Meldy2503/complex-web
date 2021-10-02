@@ -1,20 +1,35 @@
 .story {
     width: 75%;
     background-color: $color-white;
-    height: 18rem;
     margin: 0 auto;
     box-shadow: 1rem 2rem 3rem rgba($color-black, .2);
     border-radius: 3px;
-    padding: 5rem;
+    padding: 3rem 5rem;
     -webkit-clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
     clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
 
 
-&__image-shape {}
-&__text {
-    padding: 0 5rem;
-}
+&__image {
+       margin: 2rem;
 
+    &--1 {
+        width: 15rem;
+        height: 15rem;
+        float: left;
+        margin: 1.5rem;
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        -webkit-shape-outside: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%);
+    
+    }
+}
+    &__text {
+       padding: 0 6rem;
+    }
+  &__paragraph {
+      font-size: 1.7rem;
+  }
 }
 
 

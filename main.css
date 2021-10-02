@@ -315,15 +315,27 @@ body {
 .story {
   width: 75%;
   background-color: #fff;
-  height: 18rem;
   margin: 0 auto;
   box-shadow: 1rem 2rem 3rem rgba(0, 0, 0, 0.2);
   border-radius: 3px;
-  padding: 5rem;
+  padding: 3rem 5rem;
   -webkit-clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
   clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%); }
+  .story__image {
+    margin: 2rem; }
+    .story__image--1 {
+      width: 15rem;
+      height: 15rem;
+      float: left;
+      margin: 1.5rem;
+      -webkit-clip-path: circle(50% at 50% 50%);
+      clip-path: circle(50% at 50% 50%);
+      -webkit-shape-outside: circle(50% at 50% 50%);
+      shape-outside: circle(50% at 50% 50%); }
   .story__text {
-    padding: 0 5rem; }
+    padding: 0 6rem; }
+  .story__paragraph {
+    font-size: 1.7rem; }
 
 .row {
   max-width: 114rem;
@@ -384,5 +396,5 @@ body {
   margin-top: -40rem; }
 
 .section-video {
-  padding: 10rem 0;
+  padding: 5rem 0;
   background-color: #eee; }
