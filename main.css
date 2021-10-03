@@ -106,6 +106,20 @@ body {
   .paragraph:not(:last-child) {
     margin-bottom: 2rem; }
 
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: .2;
+  overflow: hidden; }
+  .bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+
 .btn:link, .btn:visited {
   text-decoration: none;
   padding: 1.5rem 4rem;
@@ -321,6 +335,7 @@ body {
   border-radius: 3px;
   padding: 3rem 6rem;
   margin-bottom: 8rem;
+  opacity: .8;
   -webkit-clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
   clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%); }
   .story__image {
@@ -419,4 +434,4 @@ body {
 
 .section-video {
   padding: 5rem 0;
-  background-color: #eee; }
+  position: relative; }
