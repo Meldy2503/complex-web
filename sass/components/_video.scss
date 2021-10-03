@@ -2,6 +2,7 @@
     width: 75%;
     background-color: $color-white;
     margin: 0 auto;
+    font-size: 1.7rem;
     box-shadow: 1rem 2rem 3rem rgba($color-black, .2);
     border-radius: 3px;
     padding: 3rem 5rem;
@@ -9,27 +10,55 @@
     clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
 
 
-&__image {
-       margin: 2rem;
-
-    &--1 {
-        width: 15rem;
-        height: 15rem;
-        float: left;
-        margin: 1.5rem;
-        -webkit-clip-path: circle(50% at 50% 50%);
-        clip-path: circle(50% at 50% 50%);
-        -webkit-shape-outside: circle(50% at 50% 50%);
-        shape-outside: circle(50% at 50% 50%);
-    
+    &__image {
+           margin: 2rem;
+           width: 15rem;
+           height: 15rem;
+           float: left;
+           margin: 1.5rem;
+           -webkit-clip-path: circle(50% at 50% 50%);
+           clip-path: circle(50% at 50% 50%);
+           -webkit-shape-outside: circle(50% at 50% 50%);
+           shape-outside: circle(50% at 50% 50%);
+           position: relative;
     }
-}
+    &__image-1 {
+        height: 100%;
+        transform: translateX(-4rem) scale(1.4);
+        backface-visibility: hidden;
+    } 
+
     &__text {
        padding: 0 6rem;
     }
-  &__paragraph {
-      font-size: 1.7rem;
-  }
+
+    &__caption {
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, 50%);
+       font-size: 1.7rem;
+       color: $color-white;
+       text-align: center;
+       text-transform: uppercase;
+       line-height: 1.5;
+       opacity: 0;
+       transition: all .5s;
+       backface-visibility: hidden;
+    }
+
+    &:hover &__caption {
+         opacity: 1;
+        transform: translate(-50%, -50%);
+        
+    }
+    &:hover &__image-1 {
+        transform: translateX(-3rem) scaleX(1);
+        filter: blur(3px) brightness(80%);
+    }
 }
+
+
+
 
 
