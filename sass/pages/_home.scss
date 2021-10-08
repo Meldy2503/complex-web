@@ -23,7 +23,7 @@
 }
 .section-booking {
     background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
-    padding: 20rem 0;
+    padding: 15rem 0;
     
 }
 
@@ -37,6 +37,14 @@
     height: 50rem;
     border-radius: 3px;
     box-shadow: 1rem 2rem 4rem rgba($color-black, 0.4);
+
+
+    &__form {
+        width:50%;
+        padding: 3rem 6rem;
+
+
+    }
     
 }
 
