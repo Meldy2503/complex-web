@@ -20,8 +20,32 @@
 .section-video {
     padding: 5rem 0;
     position: relative;
-
 }
+.section-booking {
+    background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+    padding: 20rem 0;
+    
+}
+
+.book {
+    background-image: url(./img/nat-10.jpg);
+    background-size: cover;
+    height: 50rem;
+    border-radius: 3px;
+    box-shadow: 1rem 2rem 4rem rgba($color-black, 0.4);
+    
+}
+
+// this can also work for creating a half clipped background, simply create a div with class clip inside the div class book and use the style below, set the book position to relative.
+//.clip {
+//     clip-path: polygon(0 0, 55% 0, 45% 100%, 0 100%);
+//     height: 100%;
+//     width: 100%;
+//     background-color: rgba($color-white, .9);
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+// }
 
 
 
