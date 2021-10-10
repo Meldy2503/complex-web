@@ -457,15 +457,42 @@ body {
 
 .footer {
   background-color: #333;
-  height: 50rem;
-  padding: 10rem 0;
-  font-size: 1.4rem; }
+  padding: 12rem 0;
+  font-size: 1.4rem;
+  color: #eee; }
   .footer__logo-frame {
     text-align: center;
     margin-bottom: 8rem; }
   .footer__logo {
     width: 15rem;
     height: auto; }
+  .footer__navigation {
+    border-top: 1px solid #999;
+    padding-top: .5rem;
+    display: inline-block;
+    line-height: 0; }
+  .footer__list {
+    list-style: none;
+    padding-left: 0; }
+  .footer__item {
+    display: inline-block; }
+    .footer__item:not(:last-child) {
+      margin-right: 1.5rem; }
+  .footer__link:link, .footer__link:visited {
+    text-decoration: none;
+    color: #eee;
+    background-color: #333;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: all .2s; }
+  .footer__link:hover, .footer__link:active {
+    color: #55c57a;
+    box-shadow: 1rem 2rem 3rem rgba(0, 0, 0, 0.4);
+    transform: rotate(5deg) scale(1); }
+  .footer__copyright {
+    border-top: 1px solid #999;
+    padding-top: .9rem;
+    margin-top: -.07rem; }
 
 .row {
   max-width: 114rem;
