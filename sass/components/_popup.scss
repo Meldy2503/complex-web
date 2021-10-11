@@ -5,7 +5,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: $color-grey-dark-1;
+    background-color: rgba($color-black, .95);
     z-index: 9999;
 
     &__content {
@@ -40,6 +40,20 @@
 
     &__text {
         font-size: 1.4rem;
+        margin-bottom: 4rem;
+
+
+        -moz-column-count: 2;
+        -moz-column-gap: 3rem; // by default it is 1em which is equal to 14px;
+        -moz-column-rule: 1px solid $color-grey-light-1;
+  
+        column-count: 2;
+        column-gap: 3rem; // by default it is 1em which is equal to 14px;
+        column-rule: 1px solid $color-grey-light-1;
+
+
+
+
     }
 
 }

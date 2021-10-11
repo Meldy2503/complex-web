@@ -413,7 +413,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #333;
+  background-color: rgba(0, 0, 0, 0.95);
   z-index: 9999; }
   .popup__content {
     width: 75%;
@@ -438,7 +438,14 @@ body {
     display: block;
     width: 100%; }
   .popup__text {
-    font-size: 1.4rem; }
+    font-size: 1.4rem;
+    margin-bottom: 4rem;
+    -moz-column-count: 2;
+    -moz-column-gap: 3rem;
+    -moz-column-rule: 1px solid #eee;
+    column-count: 2;
+    column-gap: 3rem;
+    column-rule: 1px solid #eee; }
 
 .story {
   width: 75%;
