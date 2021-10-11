@@ -7,6 +7,9 @@
     left: 0;
     background-color: rgba($color-black, .95);
     z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
 
     &__content {
         width: 75%;
@@ -51,10 +54,31 @@
         column-gap: 3rem; // by default it is 1em which is equal to 14px;
         column-rule: 1px solid $color-grey-light-1;
 
-
-
-
     }
+     // open state
+    &:target {
+        opacity: 1;
+        visibility: visible; 
+     }
+
+       //close state
+     &__close {
+         &:link,
+         &:visited {
+             position: absolute;
+             top: 2.5rem;
+             right: 2.5rem;
+             color: $color-grey-dark;
+             font-size: 3rem;
+             text-decoration: none;
+             display: inline-block;
+             transition: all .2s;
+         }
+ 
+         &:hover {
+             color: $color-primary;
+         }
+    }    
 
 }
 
